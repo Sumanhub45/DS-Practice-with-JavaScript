@@ -359,3 +359,139 @@ const map = new Map([[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "fiv
 // console.log(stack.peek());
 // console.log(stack.pop());
 // console.log(stack.isEmpty());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // practice of queue data structure in javascript ***************************
+
+// // Create a queue data structure
+// const queue = [];
+
+// // enqueue a value into the queue
+// queue.push(1);
+// queue.push(2);
+// queue.push(3);
+
+// // dequeue a value from the queue
+// queue.shift();
+
+// // check the length of the queue
+// console.log(queue.length);
+
+// // check the first value of the queue
+// console.log(queue[0]);
+
+// // loop through the queue and print each value
+// for (const item of queue) {
+//     console.log(item);
+// }
+
+
+
+// // create a queue with class methods:
+// // enqueue, dequeue, peek, and isEmpty
+// class Queue {
+//     constructor() {
+//         this.data = [];
+//     }
+
+//     enqueue(record) {
+//         this.data.unshift(record);
+//     }
+
+//     dequeue() {
+//         return this.data.pop();
+//     }
+
+//     peek() {
+//         return this.data[this.data.length - 1];
+//     }
+
+//     isEmpty() {
+//         return this.data.length === 0;
+//     }
+// }
+
+// const queue = new Queue();
+// queue.enqueue(1);
+// queue.enqueue(2);
+// queue.enqueue(3);
+// console.log(queue.peek());
+// console.log(queue.dequeue());
+// console.log(queue.isEmpty());
+
+// // create a circular queue with class methods:
+// // enqueue, dequeue, peek, size, print and isEmpty
+// class CircularQueue {
+//     constructor(size) {
+//         this.data = new Array(size);
+//         this.size = size;
+//         this.head = 0;
+//         this.tail = 0;
+//     }
+
+//     enqueue(record) {
+//         if (this.isFull()) {
+//             return "Queue is full";
+//         }
+//         this.data[this.tail] = record;
+//         this.tail = (this.tail + 1) % this.size;
+//     }
+
+//     dequeue() {
+//         if (this.isEmpty()) {
+//             return "Queue is empty";
+//         }
+//         const record = this.data[this.head];
+//         this.head = (this.head + 1) % this.size;
+//         return record;
+//     }
+
+//     peek() {
+//         return this.data[this.head];
+//     }
+
+//     size() {
+//         return (this.tail + this.size - this.head) % this.size;
+//     }
+
+
+//     print() {
+//         let str = "";
+//         for (let i = this.head; i < this.tail; i++) {
+//             str += this.data[i] + " ";
+//         }
+//         return str;
+//     }
+
+//     isEmpty() {
+//         return this.size() === 0;
+//     }
+
+//     isFull() {
+//         return this.size() === this.size;
+//     }
+// }
+
+// const queue = new CircularQueue(3);
+// queue.enqueue(1);
+// queue.enqueue(2);
+// queue.enqueue(3);
+// queue.enqueue(4);
+// console.log(queue.size());
+// console.log(queue.print());
+// console.log(queue.dequeue());
