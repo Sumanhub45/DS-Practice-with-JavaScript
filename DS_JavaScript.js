@@ -178,3 +178,128 @@
 // console.log(Object.is("a", "a"));
 // console.log(Object.is(/a/, /a/));
 // console.log(Object.is(new Date(), new Date()));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // practice of Set and Set methods in javascript ***************************
+
+// // Create a Set with the following values:
+// // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+const set = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// // add a new value to the Set
+// set.add(11);
+
+// // remove a value from the Set
+// set.delete(11);
+
+// // check if a value exists in the Set
+// console.log(set.has(1));
+
+// // loop through the Set and print each value
+// for (const item of set) {
+//     console.log(item);
+// }
+
+// // loop through the Set and print each value
+// set.forEach(function(item){
+//     console.log(item);
+// }
+
+// // convert the Set to an Array
+// console.log(Array.from(set));
+
+
+// console.log(set);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // practice of Map and Map methods in javascript ***************************
+
+// // Create a Map with the following values:
+// // 1, "one", 2, "two", 3, "three", 4, "four", 5, "five"
+const map = new Map([[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "five"]]);
+
+// // add a new value to the Map
+// map.set(6, "six");
+
+// // remove a value from the Map
+// map.delete(6);
+
+// // check if a value exists in the Map
+// console.log(map.has(1));
+
+// // loop through the Map and print each value
+// for (const item of map) {
+//     console.log(item);
+// }
+
+// // loop through the Map and print each value
+// map.forEach(function(item){
+//     console.log(item);
+// });
+
+// // convert the Map to an Array
+// console.log(Array.from(map));
+
+// // Map of key
+// console.log(map.keys());
+
+// // Map of values
+// console.log(map.values());
+
+// // Map of entries
+// console.log(map.entries());
+
+// // Map of keys and values
+// console.log(map.entries());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
