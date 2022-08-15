@@ -303,3 +303,59 @@ const map = new Map([[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "fiv
 
 
 
+// // practice of stack data structure in javascript ***************************
+
+// // Create a stack data structure
+// const stack = [];
+
+// // push a value onto the stack
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+
+// // pop a value off the stack
+// stack.pop();
+
+// // check the length of the stack
+// console.log(stack.length);
+
+// // check the top value of the stack
+// console.log(stack[stack.length - 1]);
+
+// // loop through the stack and print each value
+// for (const item of stack) {
+//     console.log(item);
+// }
+
+// // create a stack with class methods:
+// // push, pop, peek, and isEmpty
+// class Stack {
+//     constructor() {
+//         this.data = [];
+//     }
+
+//     push(record) {
+//         this.data.push(record);
+//     }
+
+//     pop() {
+//         return this.data.pop();
+
+//     }
+
+//     peek() {
+//         return this.data[this.data.length - 1];
+//     }
+
+//     isEmpty() {
+//         return this.data.length === 0;
+//     }
+// }
+
+// const stack = new Stack();
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// console.log(stack.peek());
+// console.log(stack.pop());
+// console.log(stack.isEmpty());
