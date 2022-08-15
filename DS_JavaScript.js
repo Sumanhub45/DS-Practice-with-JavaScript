@@ -199,7 +199,7 @@
 
 // // Create a Set with the following values:
 // // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-const set = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// const set = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // // add a new value to the Set
 // set.add(11);
@@ -252,7 +252,7 @@ const set = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
 // // Create a Map with the following values:
 // // 1, "one", 2, "two", 3, "three", 4, "four", 5, "five"
-const map = new Map([[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "five"]]);
+// const map = new Map([[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "five"]]);
 
 // // add a new value to the Map
 // map.set(6, "six");
@@ -495,3 +495,163 @@ const map = new Map([[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "fiv
 // console.log(queue.size());
 // console.log(queue.print());
 // console.log(queue.dequeue());
+
+
+
+
+
+
+
+
+
+
+
+// // practice of LinkedList data structure in javascript ***************************
+
+// // Create a linked list data structure
+// const list = {
+//     head: null,
+//     tail: null,
+// };
+
+// // add a new value to the linked list
+// const addToList = (list, val) => {
+//     const newNode = {
+//         value: val,
+//         next: null,
+//     };
+
+//     if (!list.head) {
+//         list.head = newNode;
+//         list.tail = newNode;
+//     } else {
+//         list.tail.next = newNode;
+//         list.tail = newNode;
+//     }
+// }
+
+// // remove a value from the linked list
+// const removeFromList = (list, val) => {
+//     let current = list.head;
+//     let previous = null;
+
+//     while (current) {
+//         if (current.value === val) {
+//             if (!previous) {
+//                 list.head = current.next;
+//             } else {
+//                 previous.next = current.next;
+//             }
+//         }
+//         previous = current;
+//         current = current.next;
+//     }
+// }
+
+// // check if a value is in the linked list
+// const contains = (list, val) => {
+//     let current = list.head;
+//     while (current) {
+//         if (current.value === val) {
+//             return true;
+//         }
+//         current = current.next;
+//     }
+//     return false;
+// }
+
+// // print the values of the linked list
+// const printList = (list) => {
+//     let current = list.head;
+//     let str = "";
+//     while (current) {
+//         str += `${current.value} `;
+//         current = current.next;
+//     }
+//     return str;
+// }
+
+// // create a linked list with class methods:
+// // addToList, removeFromList, contains, and printList
+// class LinkedList {
+//     constructor() {
+//         this.head = null;
+//         this.tail = null;
+//     }
+
+//     addToList(val) {
+//         const newNode = {
+//             value: val,
+//             next: null,
+//         };
+
+//         if (!this.head) {
+//             this.head = newNode;
+//             this.tail = newNode;
+//         } else {
+//             this.tail.next = newNode;
+//             this.tail = newNode;
+//         }
+//     }
+
+//     removeFromList(val) {
+//         let current = this.head;
+//         let previous = null;
+
+//         while (current) {
+//             if (current.value === val) {
+//                 if (!previous) {
+//                     this.head = current.next;
+//                 } else {
+//                     previous.next = current.next;
+//                 }
+//             }
+//             previous = current;
+//             current = current.next;
+//         }
+//     }
+
+//     contains(val) {
+//         let current = this.head;
+//         while (current) {
+//             if (current.value === val) {
+//                 return true;
+//             }
+//             current = current.next;
+//         }
+//         return false;
+//     }
+
+//     printList() {
+//         let current = this.head;
+//         let str = "";
+//         while (current) {
+//             str += `${current.value} `;
+//             current = current.next;
+//         }
+//         return str;
+//     }
+// }
+
+// const list = new LinkedList();
+// list.addToList(1);
+// list.addToList(2);
+// list.addToList(3);
+// list.addToList(4);
+// console.log(list.printList());
+// list.removeFromList(2);
+// console.log(list.printList());
+// console.log(list.contains(3));
+// console.log(list.contains(2));
+
+
+
+
+
+
+
+
+
+
+
+
